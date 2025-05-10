@@ -35,5 +35,6 @@ Now test it :
 	vsil test.vsil
 
 
-
+---> Added Basic REPL ( Read-Eval-Print-Loop)
+Update file - /usr/local/bin/vsil accordingly
 
