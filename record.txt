@@ -1,0 +1,12 @@
+VSIL - Very Simple Interpreted Language
+
+lexer -> converts source code into tokens
+parser -> Validates the syntax
+interpreter -> Executes the code 
+
+
+---> vsil.py : It is the main interpreter program which can be used run vsil file 
+We can run vsil files using this as :
+python vsil.py filename.vsil
+
+

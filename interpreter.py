@@ -1,5 +1,5 @@
 
-def interprete(ast):
+def interpret(ast):
 
     if ast['type'] == 'print':
         print(ast['value'])

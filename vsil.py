@@ -1,1 +1,22 @@
+import sys
+
+from lexer import tokenize # lexer
+from parser import parse # parser
+from interpreter import interpret
+
+def run(code): 
+    tokens = tokenize(code)
+    ast = parse(tokens)
+    interpret(ast)
+
+if __name__ == '__main__':
+    if len(sys.argv) != 2:
+        print("Usage: vsil.py <file.vsil>")
+        sys.exit(1)
+
+    filename = sys.argv[1]
+    with open(filename, 'r') as f:
+        source_code = f.read()
+
+    run(source_code)
 
