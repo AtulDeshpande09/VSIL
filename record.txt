@@ -22,3 +22,18 @@ Give it executable permission using this :
 Now run using :
 	./vsil test.vsil
 
+
+---> We can take this one step further.
+Move or copy vsil file to /usr/local/bin/ we can now use it globally
+( Remember to copy/move these files too - 
+lexer.py ,parser.py , interpreter.py )
+	sudo cp vsil /usr/local/bin/vsil
+	sudo cp lexer.py /usr/local/bin/lexer.py
+	sudo cp parser.py /usr/local/bin/parser.py
+	sudo cp interpreter.py /usr/local/bin/interpreter.py
+Now test it :
+	vsil test.vsil
+
+
+
+
