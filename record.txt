@@ -10,3 +10,15 @@ We can run vsil files using this as :
 python vsil.py filename.vsil
 
 
+---> We can run vsil files directly without using python command
+You can Follow these steps :
+Update vsil.py :
+	Add this line at the top of the file -
+	#!/usr/bin/env python3
+
+Rename vsil.py as vsil
+Give it executable permission using this :
+	chmod +x vsil
+Now run using :
+	./vsil test.vsil
+
