@@ -15,12 +15,10 @@ if __name__ == '__main__':
     
     if len(sys.argv) == 1:
         while True :
-            try :
-                code = input("vsil--> ")
-                run(code)
-
-            except KeyboardInterrupt:
-                break
+            code = input("vsil--> ")
+            if code == "exit":
+                sys.exit(1)
+            run(code)
 
 
     if len(sys.argv) > 2:
