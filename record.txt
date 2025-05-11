@@ -38,3 +38,11 @@ Now test it :
 ---> Added Basic REPL ( Read-Eval-Print-Loop)
 Update file - /usr/local/bin/vsil accordingly
 
+
+
+---> MAJOR UPDATE : 
+Code is now Modular so that it is easier to extend functionalities.
+Numbers are added .
+You can still check previous code on this branch - "basic"
+Update vsil
+Make sure to update the files in /usr/local/bin

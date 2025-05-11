@@ -3,22 +3,24 @@
 import sys
 
 from lexer import tokenize # lexer
-from parser import parse # parser
-from interpreter import interpret
+from parser import Parser # parser
+from interpreter import Interpreter
 
 def run(code): 
     tokens = tokenize(code)
-    ast = parse(tokens)
-    interpret(ast)
+    parser = Parser(tokens)
+    ast = parser.parse()
+    interpreter = Interpreter()
+    interpreter.eval(ast)
 
 if __name__ == '__main__':
     
     if len(sys.argv) == 1:
         while True :
-            code = input("vsil--> ")
-            if code == "exit":
+            line = input("vsil--> ")
+            if line.strip() == "exit":
                 sys.exit(1)
-            run(code)
+            run(line)
 
 
     if len(sys.argv) > 2:
