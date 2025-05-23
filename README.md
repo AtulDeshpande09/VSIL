@@ -49,15 +49,13 @@ print "The result is:"
 print 2 + 3
 print "Bye!"
 ```
+Run it by : 
+
 ```bash
 python main.py test.vsil
 ```
 
-## 📦 Project Structure
+## 🎯 Status
 
-vsil/
-├── lexer.py         # Tokenizes input
-├── parser.py        # Builds the AST
-├── interpreter.py   # Evaluates AST
-├── main.py          # Entry point
-└── test.vsil        # Sample program
+### 🟢 Educational Complete
+This project is no longer under development, but it remains a personal milestone and a great learning tool.
